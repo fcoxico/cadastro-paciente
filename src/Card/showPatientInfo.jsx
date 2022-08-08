@@ -1,14 +1,22 @@
-import React from 'react'
 
-export default function showpatientinfo({nome, email, cpf, idade, numero_contato}) {
-    
+import "../sytles/estilos.css";
+
+function Card({name, time}) {
   return (
-    <div>
-        <strong>{nome}</strong>
-        <h3>{email}</h3>
-        <h3>{cpf}</h3>
-        <h3>{idade}</h3>
-        <h3>{numero_contato}</h3>
+    <div className="card">
+    <strong>{name}</strong>
+    <small>{time}</small>
     </div>
   )
 }
+
+export default Card
+
+/*
+A propriedade "props" faz com que o componente que recebe as propriedades se comunique como o componente que gerou as propriedades. Sendo assim temos:
+
+Componente Card recebendo o props.name e props.time
+
+Componente Home enviando as propriedades mesmo que ele esteja importando a função card
+
+*/

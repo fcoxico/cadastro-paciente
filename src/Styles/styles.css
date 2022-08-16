@@ -1,12 +1,29 @@
-
 /*----------  Reset de Estilo  ----------*/
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+/*----------  Estilo para o Index  ----------*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/*----------  Estilo para o Formulário  ----------*/
+
+.form h1 {
   border-bottom: 1px solid white;
   color: #3d3d3d;
   font-family: sans-serif;
@@ -18,14 +35,7 @@ h1 {
 }
 
 
-/*----------  Estilo para o Formulário  ----------*/
-
-
-fieldset {
-  padding-bottom: 10px;
-}
-
-form {
+.form {
   background: white;
   display: flex;
   flex-direction: column;
@@ -35,7 +45,7 @@ form {
   padding: 30px 50px;
 }
 
-input {
+.form input {
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   box-sizing: border-box;
@@ -46,59 +56,32 @@ input {
   margin-bottom: 2px;
 }
 
-label {
+.form label {
   color: #3d3d3d;
   display: flex;
   align-content: flex-start;
   padding-left: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-
 /*----------  Estilo para o Button  ----------*/
 
-button {
+.form button {
   font-size: 20px;
   margin-top: 10px;
-  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  width: 95%;
   height: 50px;
   border-width: 1px;
   background: #1e62d0;
   color: #ffffff;
   border-color: #337fed;
   font-weight: bold;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
-
-/*----------  Estilo para o card mostra paciente  ----------*/
-
-
-
-.card {
-  height: 50px;
-  width: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px;
-
- background: #735bf2; 
- color: #fff;
-
- border-radius:  10px;
- margin-bottom: 20px;
-}
-
-.card strong{
-  font-size: 18px;
+  border-radius: 6px;
 }

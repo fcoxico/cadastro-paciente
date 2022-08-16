@@ -1,15 +1,10 @@
-
-import './App.css';
-import CadastroView from './Components/Cadastro';
-//import {MyForm} from './form/form';
-
+import "./Styles/styles.css";
+import PacienteView from "./MVC/View/PacienteView";
 
 function App() {
   return (
     <div className="App">
-        
-        <CadastroView/>
-        
+      <PacienteView />
     </div>
   );
 }
